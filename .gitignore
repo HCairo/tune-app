@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Django
+*.log
+*.pot
+*.pyc
+*.egg-info/
+*.egg
+
+# Environnements virtuels
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# Static files
+/staticfiles/

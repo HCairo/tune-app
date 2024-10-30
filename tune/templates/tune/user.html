@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="profile-container">
+    <h2>Bienvenue, {{ user_data.display_name }} !</h2>
+    <p>Email : {{ user_data.email }}</p>
+    <p>Spotify ID : {{ user_data.id }}</p>
+    {% if user_data.images %}
+        <img src="{{ user_data.images.0.url }}" alt="Profile Picture" width="100px" class="profile-pic">
+    {% endif %}
+
+    <h3>Vos Artistes Préférés</h3>
+    <ul class="artist-list">
+        {% for artist in top_artists %}
+            <li class="artist-item">
+                <strong>{{ artist.name }}</strong>
+                {% if artist.images %}
+                    <img src="{{ artist.images.0.url }}" alt="Artist Image" width="50px" class="artist-image">
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h3>Vos Titres Préférés</h3>
+    <ul class="track-list">
+        {% for track in top_tracks %}
+            <li class="track-item">
+                <strong>{{ track.name }}</strong> by {{ track.artists.0.name }}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h3>Vos Genres Favoris</h3>
+    <ul class="genre-list">
+        {% for genre in top_genres %}
+            <li class="genre-item">{{ genre }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'logout' %}" class="logout-button">Se Déconnecter</a>
+</div>
+{% endblock %}

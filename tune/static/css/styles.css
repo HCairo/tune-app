@@ -1,0 +1,73 @@
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: #333;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+.profile-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.profile-container h2 {
+  color: #333;
+  text-align: center;
+}
+.profile-container p {
+  color: #666;
+}
+.profile-container .profile-pic {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.profile-container h3 {
+  color: #555;
+  margin-top: 20px;
+}
+.profile-container ul {
+  padding: 0;
+}
+.profile-container .artist-list, .profile-container .track-list, .profile-container .genre-list {
+  list-style-type: none;
+}
+.profile-container .artist-list .artist-item, .profile-container .artist-list .track-item, .profile-container .artist-list .genre-item, .profile-container .track-list .artist-item, .profile-container .track-list .track-item, .profile-container .track-list .genre-item, .profile-container .genre-list .artist-item, .profile-container .genre-list .track-item, .profile-container .genre-list .genre-item {
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profile-container .artist-list .artist-item img, .profile-container .artist-list .track-item img, .profile-container .artist-list .genre-item img, .profile-container .track-list .artist-item img, .profile-container .track-list .track-item img, .profile-container .track-list .genre-item img, .profile-container .genre-list .artist-item img, .profile-container .genre-list .track-item img, .profile-container .genre-list .genre-item img {
+  border-radius: 5px;
+}
+.profile-container .logout-button {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: #ff5733;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.profile-container .logout-button:hover {
+  background-color: #c70000;
+}/*# sourceMappingURL=styles.css.map */

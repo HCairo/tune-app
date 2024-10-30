@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Callback</h1>
+    <p>You have successfully logged in! Redirecting...</p>
+    <script>
+        // Redirigez automatiquement vers la page d'accueil après 3 secondes
+        setTimeout(function() {
+            window.location.href = "{% url 'home' %}";
+        }, 3000);
+    </script>
+{% endblock %}

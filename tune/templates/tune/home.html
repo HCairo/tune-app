@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Welcome to the Music Discovery App!</h1>
+    <p>Your one-stop app for discovering new music based on your Spotify preferences!</p>
+    <a href="{% url 'login' %}" class="btn">Login with Spotify</a>
+{% endblock %}

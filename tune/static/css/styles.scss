@@ -1,0 +1,89 @@
+nav {
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+        background-color: #333;
+
+        li {
+            a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+
+                &:hover {
+                    color: #ffcc00;
+                }
+            }
+        }
+    }
+}
+// styles/profile.scss
+.profile-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        color: #333;
+        text-align: center;
+    }
+
+    p {
+        color: #666;
+    }
+
+    .profile-pic {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+
+    h3 {
+        color: #555;
+        margin-top: 20px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .artist-list, .track-list, .genre-list {
+        list-style-type: none;
+
+        .artist-item, .track-item, .genre-item {
+            margin: 10px 0;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .logout-button {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        padding: 10px;
+        background-color: #ff5733;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: #c70000;
+        }
+    }
+}
